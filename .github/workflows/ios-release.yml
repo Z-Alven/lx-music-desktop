@@ -1,0 +1,13 @@
+name: lxmusic_iOS
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  build_ios:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout the code
+      uses: actions/checkout@v2
